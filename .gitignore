@@ -1,3 +1,5 @@
-.json
-.tar
-.dat
+*.json
+*.tar
+*.dat
+__pycache__/
+Manifest.toml

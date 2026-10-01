@@ -1,4 +1,4 @@
-module MASON
+module Bison
 
 """
     hello(who::String)
@@ -9,4 +9,4 @@ hello(who::String) = "Hello, $who"
 
 include("main.jl")
 export dump, load, spill
-end # module MASON
+end # module Bison

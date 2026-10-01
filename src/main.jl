@@ -14,7 +14,7 @@ function _dump(p, a::AbstractArray{<:Number})
     npzwrite(name, a)
     basename(name)
 end
-function _dump(p, a::AbstractArray)
+function _dump(p, a::Union{Tuple,AbstractVector})
     map(enumerate(a)) do (i, a)
         _dump("$p$_D$(i-1)", a)
     end

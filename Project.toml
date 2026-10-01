@@ -10,6 +10,7 @@ OrderedCollections = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 Tar = "a4e569a6-e804-4fa4-b0f3-eef7a1d5b13e"
 
 [compat]
+julia="1.12"
 JSON = "1,2,3"
 NPZ = "0.4,0.5"
 OrderedCollections = "2,3,4"

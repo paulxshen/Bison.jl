@@ -1,0 +1,4 @@
+name = "MASON.jl"
+uuid = "e4363e06-16c2-410e-abfd-5120d1476088"
+version = "0.1.0"
+authors = ["Paul Shen <pxshen@alumni.stanford.edu>"]

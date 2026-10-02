@@ -3,3 +3,5 @@
 *.dat
 __pycache__/
 Manifest.toml
+dist/
+*.egg-info/

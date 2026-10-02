@@ -9,6 +9,11 @@ function _dump(p, d::Union{AbstractDict,NamedTuple},)
         k => _dump("$(p)$_D$k", v)
     end)
 end
+function _dump(p, a::AbstractVector{<:Number})
+    name = "$(p).npy"
+    npzwrite(name, a)
+    basename(name)
+end
 function _dump(p, a::AbstractArray{<:Number})
     name = "$(p).npy"
     npzwrite(name, a)

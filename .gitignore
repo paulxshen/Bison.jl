@@ -5,3 +5,4 @@ __pycache__/
 Manifest.toml
 dist/
 *.egg-info/
+.vscode/

@@ -1,4 +1,5 @@
-include("../src/main.jl")
+# include("../src/main.jl")
+using Bison
 
 T=Float32
 m=(;
@@ -8,8 +9,8 @@ m=(;
     meta=(; runs=7, signature="abc")
 )
 
-dump("m.json", m)
-m1=load("m.json")
+Bison.dump("m.json", m)
+m1=Bison.load("m.json")
 
 @assert eltype(m1["params"])==T #
 @assert size(m1["activations"][1])==(5, 5)
